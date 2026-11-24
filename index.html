@@ -1,3 +1,13 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="戳泡泡">
+<meta name="theme-color" content="#bfe8ff">
 <title>寶寶戳泡泡</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap">
@@ -167,6 +177,16 @@ body {
   .score.bump .star, .party .crowd span, .party .title span, .party::before, .confetti i { animation: none !important; }
 }
 </style>
+<style>
+/* standalone page: the reset Claude's artifact skeleton normally adds */
+*, *::before, *::after { box-sizing: border-box; }
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+body { margin: 0; font-size: 14px; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
+
 
 <div id="field" aria-label="泡泡遊戲區"></div>
 
@@ -561,3 +581,6 @@ body {
   document.addEventListener('dblclick', e => e.preventDefault());
 })();
 </script>
+
+</body>
+</html>
